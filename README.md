@@ -1,4 +1,4 @@
-# Movie Explorer 🎬
+# Movie Explorer 
 
 Homework 15 - React based movie browser website
 
