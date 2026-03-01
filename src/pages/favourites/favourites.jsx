@@ -2,14 +2,26 @@ import styles from './favourites.module.css'
 import { useLocalStorage } from "../../hooks/useLocalStorage"
 import MovieCard from "../../components/MovieCard/MovieCard"
 import { useNavigate } from "react-router-dom"
+import Loading from "../../components/Loading/loader"
+import { useState, useEffect } from "react"
 
 export default function Favourites() {
     const [favourites, setFavourites] = useLocalStorage("favourites", [])
     const navigate = useNavigate()
+    const [loading, setLoading] = useState(true)
+
+    useEffect(() => {                          
+        const timeout = setTimeout(() => {
+            setLoading(false)
+        }, 400)
+        return () => clearTimeout(timeout)
+    }, [])
 
     const removeFavourite = (id) => {
         setFavourites(favourites.filter(movie => movie.id !== id))
     }
+
+    if (loading) return <Loading />
 
     if (favourites.length === 0) 
         return <p>No favourites added</p>

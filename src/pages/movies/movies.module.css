@@ -91,3 +91,30 @@ p {
     margin-left: 6px;
     font-size: 11px;
 }
+
+.favLink {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    text-decoration: none;
+    color: inherit;
+    padding: 10px;
+}
+
+.star {
+    max-width: 20px;
+    height: auto;
+    filter: none !important;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.favLink:hover .star {
+    opacity: 1;
+}
+
+.favLink:hover{
+    background-color: rgb(47, 46, 46);
+    border-radius: 10px;
+    font-family: "Pacifico", cursive;
+}

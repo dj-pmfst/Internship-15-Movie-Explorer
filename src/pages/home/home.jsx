@@ -26,11 +26,14 @@ export default function home() {
         animationId = requestAnimationFrame(scroll)
         return () => cancelAnimationFrame(animationId)
     }, [])
-    
+
     return (
         <div className={styles.container}>
             <header className={styles.header}>
-                <Link to="/favourites">Favourites </Link>
+                <Link to="/favourites" className={styles.favLink}>
+                    <img className={styles.star} src="/src/assets/icons/star.png" /> 
+                    Favourites
+                </Link>
             </header>
 
             <main className={styles.hero}>
