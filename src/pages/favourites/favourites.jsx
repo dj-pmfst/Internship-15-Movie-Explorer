@@ -1,6 +1,6 @@
 import styles from './favourites.module.css'
-import { useLocalStorage } from "../hooks/useLocalStorage"
-import MovieCard from "../components/MovieCard"
+import { useLocalStorage } from "../../hooks/useLocalStorage"
+import MovieCard from "../../components/MovieCard/MovieCard"
 
 export default function Favourites() {
     const [favorites, setFavorites] = useLocalStorage("favorites", [])

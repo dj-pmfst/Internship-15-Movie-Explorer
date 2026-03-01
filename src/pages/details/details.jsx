@@ -1,7 +1,7 @@
 import styles from './details.module.css'
 import { useParams, useNavigate } from "react-router-dom"
-import { useLocalStorage } from "../hooks/useLocalStorage"
-import { movies } from "../data/movies"
+import { useLocalStorage } from "../../hooks/useLocalStorage"
+import { movies } from "../../data/movies"
 
 export default function MovieDetail() {
     const { id } = useParams()

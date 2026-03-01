@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react"
-import { movies } from "../data/movies" 
+import { movies } from "../data/movies"
 
 export function useFetchMovies() {
     const [data, setData] = useState([])

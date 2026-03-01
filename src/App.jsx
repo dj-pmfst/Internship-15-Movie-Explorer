@@ -1,10 +1,10 @@
 import { Route, Routes } from "react-router-dom"
 import { Layout } from "./components/Layout/Layout"
-import Home from "./pages/Home"
-import Movies from "./pages/Movies"
-import MovieDetail from "./pages/MovieDetail"
-import Favourites from "./pages/Favourites"
-import NotFound from "./pages/NotFound"
+import Home from "./pages/home/home"
+import Movies from "./pages/movies/movies"
+import MovieDetail from "./pages/details/details"
+import Favourites from "./pages/favourites/favourites"
+import NotFound from "./pages/error/error"
 
 function App() {
 

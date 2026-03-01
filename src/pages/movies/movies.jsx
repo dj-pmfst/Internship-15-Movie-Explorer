@@ -1,7 +1,7 @@
 import { Link, useNavigate } from "react-router-dom"
 import { useState, useMemo, useRef, useEffect } from "react"
-import { useFetchMovies } from "../hooks/useFetchMovies"
-import MovieCard from "../components/MovieCard"
+import { useFetchMovies } from "../../hooks/useFetchMovies"
+import MovieCard from "../../components/MovieCard/MovieCard"
 import styles from './movies.module.css'
 
 export default function Movies() {
@@ -14,8 +14,10 @@ export default function Movies() {
     const debounceRef = useRef(null)
 
     useEffect(() => {
-        searchRef.current.focus()
-    }, [])
+        if (searchRef.current) {
+            searchRef.current.focus()
+        }
+    }, [loading])
 
     const handleSearch = (e) => {
         clearTimeout(debounceRef.current)
