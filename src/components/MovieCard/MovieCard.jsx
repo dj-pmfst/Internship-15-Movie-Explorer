@@ -12,7 +12,7 @@ export default function MovieCard({ movie, isFavorite, onRemove }) {
             <img src={movie.poster} alt={movie.title} className={styles.poster} />
             <div className={styles.info}>
                 <h3>{movie.title}</h3>
-                <p>{movie.year} • ⭐ {movie.rating}</p>
+                <p>{movie.year}  &#x2022;  {movie.rating} ⭐</p>
                 {onRemove && (
                     <button onClick={(e) => {
                         e.stopPropagation() 

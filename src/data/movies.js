@@ -43,5 +43,95 @@ export const movies = [
         genre: "Sci-fi",
         description: "When Earth becomes uninhabitable in the future, a farmer and ex-NASA pilot, Joseph Cooper, is tasked to pilot a spacecraft, along with a team of researchers, to find a new planet for humans." ,
         poster: "/src/assets/Interstellar.jpg"
+    },
+    {
+        id: 6,
+        title: "Rogue One",
+        year: 2016,
+        rating: 7.8,
+        genre: "Action",
+        description: "In a time of conflict, a group of unlikely heroes band together on a mission to steal the plans to the Death Star, the Empire's ultimate weapon of destruction.",
+        poster: "/src/assets/Rogue_One.png"
+    },
+    {
+        id: 7,
+        title: "Parasite",
+        year: 2019,
+        rating: 8.5,
+        genre: "Drama",
+        description: "Greed and class discrimination threaten the newly formed symbiotic relationship between the wealthy Park family and the destitute Kim clan.",
+        poster: "/src/assets/Parasite.png"
+    },
+    {
+        id: 8,
+        title: "Mickey 17",
+        year: 2025,
+        rating: 6.7,
+        genre: "Sci-fi",
+        description: "During a human expedition to colonize space, Mickey 17, a so-called expendable employee, is sent to explore an ice planet.",
+        poster: "/src/assets/Mickey_17.png"
+    },
+    {
+        id: 9,
+        title: "Barbie",
+        year: 2023,
+        rating: 6.8,
+        genre: "Fantasy",
+        description: "Barbie and Ken are having the time of their lives in the seemingly perfect world of Barbie Land. However, when they get a chance to go to the outside world, they soon discover the joys and perils of living among regular humans.",
+        poster: "/src/assets/Barbie.jpg"
+    },
+    {
+        id: 10,
+        title: "Flow",
+        year: 2024,
+        rating: 7.9,
+        genre: "Fantasy",
+        description: "Cat is a solitary animal, but as its home is devastated by a great flood, he finds refuge on a boat populated by various species, and will have to team up with them despite their differences.",
+        poster: "/src/assets/Flow.jpg"
+    },
+    {
+        id: 11,
+        title: "Grave of the Fireflies",
+        year: 1988,
+        rating: 8.5,
+        genre: "Drama",
+        description: "A young boy and his little sister struggle to survive in Japan during World War II.",
+        poster: "/src/assets/Grave_of_the_Fireflies.jpg"
+    },
+    {
+        id: 12,
+        title: "1917",
+        year: 2019,
+        rating: 8.2,
+        genre: "Action",
+        description: "April 6th, 1917. As an infantry battalion assembles to wage war deep in enemy territory, two soldiers are assigned to race against time and deliver a message that will stop 1,600 men from walking straight into a deadly trap.",
+        poster: "/src/assets/1917.jpg"
+    },
+    {
+        id: 13,
+        title: "Forrest Gump",
+        year: 1994,
+        rating: 8.8,
+        genre: "Drama",
+        description: "The history of the United States from the 1950s to the '70s unfolds from the perspective of an Alabama man with an IQ of 75, who yearns to be reunited with his childhood sweetheart.",
+        poster: "/src/assets/Forrest_Gump.jpg"
+    },
+    {
+        id: 14,
+        title: "Jurassic Park",
+        year: 1993,
+        rating: 8.2,
+        genre: "Action",
+        description: "An industrialist invites some experts to visit his theme park of cloned dinosaurs. After a power failure, the creatures run loose, putting everyone's lives, including his grandchildren's, in danger.",
+        poster: "/src/assets/Jurassic_Park.jpg"
+    },
+    {
+        id: 15,
+        title: "How to Train Your Dragon",
+        year: 2010,
+        genre: "Fantasy",
+        rating: 8.1,
+        description: "A hapless young Viking who aspires to hunt dragons becomes the unlikely friend of a young dragon himself, and learns there may be more to the creatures than he assumed.",
+        poster: "/src/assets/How_to_Train_Your_Dragon.jpg"
     }
 ]

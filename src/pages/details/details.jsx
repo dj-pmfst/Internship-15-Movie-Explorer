@@ -26,7 +26,7 @@ export default function MovieDetail() {
         <div>
             <button onClick={() => navigate(-1)}>← Back</button>
             <h1>{movie.title}</h1>
-            <p>{movie.year} • {movie.genre} • ⭐ {movie.rating}</p>
+            <p>{movie.year} • {movie.genre} •  {movie.rating} ⭐</p>
             <p>{movie.description}</p>
             <button onClick={toggleFavorite}>
                 {isFavorite ? "Remove from Favourites" : "Add to Favourites"}

@@ -57,7 +57,7 @@ export default function Movies() {
     return (
         <div className={styles.container}>
             <header className={styles.header}>
-                <span>Movie Explorer</span>
+                <span>Movie Explorer <img src="/src/assets/film-roll.png"/></span>
                 <Link to="/favourites">Favourites</Link>
             </header>
 
@@ -82,6 +82,7 @@ export default function Movies() {
                         <option value="Action">Action</option>
                         <option value="Drama">Drama</option>
                         <option value="Sci-fi">Sci-fi</option>
+                        <option value="Fantasy">Fantasy</option>
                     </select>                    
                 </div>
                 
