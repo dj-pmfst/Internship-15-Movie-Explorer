@@ -12,11 +12,20 @@ export default function Favourites() {
     if (favourites.length === 0) 
         return <p>No favourites added</p>
 
-    return (
-        <div>
-            {favourites.map(movie => (
-                <MovieCard key={movie.id} movie={movie} onRemove={removeFavourite} />
-            ))}
-        </div>
-    )
+        return (
+            <div className={styles.container}>
+                <header className={styles.header}>
+                    <span>Favourites</span>
+                </header>
+                <main className={styles.main}>
+                    <div className={styles.favourites}>
+                        <div className={styles.grid}>
+                            {favourites.map(movie => (
+                                <MovieCard key={movie.id} movie={movie} onRemove={removeFavourite} />
+                            ))}
+                        </div>
+                    </div>
+                </main>
+            </div>
+        )
 }

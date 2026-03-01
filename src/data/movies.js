@@ -133,5 +133,86 @@ export const movies = [
         rating: 8.1,
         description: "A hapless young Viking who aspires to hunt dragons becomes the unlikely friend of a young dragon himself, and learns there may be more to the creatures than he assumed.",
         poster: "/src/assets/How_to_Train_Your_Dragon.jpg"
+    },
+    {
+        id: 16,
+        title: "The Hunger Games",
+        year: 2012,
+        genre: "Action",
+        rating: 7.2,
+        description: "Katniss Everdeen voluntarily takes her younger sister's place in the Hunger Games: a televised competition in which two teenagers from each of the twelve Districts of Panem are chosen at random to fight to the death.",
+        poster: "/src/assets/HungerGames.jpg"
+    },
+    {
+        id: 17,
+        title: "Amélie",
+        year: 2001,
+        genre: "Drama",
+        rating: 8.3,
+        description: "Despite being caught in her imaginative world, young waitress Amelie decides to help people find happiness. Her quest to spread joy leads her on a journey during which she finds true love.",
+        poster: "/src/assets/Amelie.jpg"
+    },
+    {
+        id: 18,
+        title: "Mamma Mia!",
+        year: 2008,
+        genre: "Drama",
+        description: "Independent hotelier Donna is preparing for her daughter's wedding with the help of two old friends. Meanwhile, spirited bride-to-be Sophie invites three men from her mother's past in order to discern which is her biological father.",
+        rating: 6.5,
+        poster: "/src/assets/Mamma_Mia.jpg"
+    },
+    {
+        id: 19,
+        title: "2001: Space Odyssey",
+        year: 1968,
+        genre: "Sci-fi",
+        description: "When a mysterious artifact is uncovered on the Moon, a spacecraft manned by two humans and one supercomputer is sent to Jupiter to find its origins.",
+        rating: 8.3,
+        poster: "/src/assets/2001.png"
+    },
+    {
+        id: 20, 
+        title: "Tenet",
+        year: 2020,
+        rating: 7.3,
+        genre: "Action",
+        description: "Armed with only the word Tenet, and fighting for the survival of the entire world, CIA operative, The Protagonist, journeys through a twilight world of international espionage on a global mission that unfolds beyond real time.",
+        poster: "/src/assets/Tenet.jpg"
+    },
+    {
+        id: 21,
+        title: "Iron Man",
+        year: 2008,
+        rating: 7.9,
+        genre: "Sci-fi",
+        description: "After being held captive in an Afghan cave, billionaire engineer Tony Stark creates a unique weaponized suit of armor to fight evil.",
+        poster: "/src/assets/Iron_Man.jpg"
+    },
+    {
+        id: 22,
+        title: "District 9",
+        year: 2009,
+        rating: 7.9,
+        genre: "Sci-fi",
+        description: "In a future Earth in which aliens are isolated in a remote ghetto, a government agent finds himself banished there.",
+        poster: "/src/assets/District.jpg"
+    },
+    {
+        id: 23,
+        title: "Howl's Moving Castle",
+        year: 2004,
+        rating: 8.2,
+        genre: "Fantasy",
+        description: "When an unconfident young woman is cursed with an old body by a spiteful witch, her only chance of breaking the spell lies with a self-indulgent yet insecure young wizard and his companions in his legged, walking castle.",
+        poster: "/src/assets/Howls.jpg"
+    },
+    {
+        id: 24,
+        title: "Corpse Bride",
+        year: 2005,
+        rating: 7.4,
+        genre: "Fantasy",
+        description: "",
+        poster: "/src/assets/Corpse_Bride.jpg"
     }
 ]
