@@ -15,7 +15,7 @@ export default function Favourites() {
         return (
             <div className={styles.container}>
                 <header className={styles.header}>
-                    <span>Favourites</span>
+                    <span>Favourites <img className={styles.star} src="/src/assets/star.png" /></span>
                 </header>
                 <main className={styles.main}>
                     <div className={styles.favourites}>

@@ -17,7 +17,7 @@ export function useFetchMovies() {
                 setError("Something went wrong, try again later.")
                 setLoading(false)
             }
-        }, 800) 
+        }, 400) 
 
         return () => clearTimeout(timeout) 
     }, [])
