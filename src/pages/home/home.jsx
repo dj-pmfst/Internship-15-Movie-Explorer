@@ -8,12 +8,12 @@ export default function home() {
     return (
         <div className={styles.container}>
             <header className={styles.header}>
-                <Link to="/favourites">⭐ Favourites</Link>
+                <Link to="/favourites">Favourites </Link>
             </header>
 
             <main className={styles.hero}>
                 <h1 className={styles.title}>Movie Explorer</h1>
-                <p>Discovrr and save your favourite movies</p>
+                <p>Discover and save your favourite movies</p>
                 <input
                     type="text"
                     placeholder="Search for a movie..."

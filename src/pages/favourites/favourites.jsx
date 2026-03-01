@@ -3,19 +3,19 @@ import { useLocalStorage } from "../../hooks/useLocalStorage"
 import MovieCard from "../../components/MovieCard/MovieCard"
 
 export default function Favourites() {
-    const [favorites, setFavorites] = useLocalStorage("favorites", [])
+    const [favourites, setFavourites] = useLocalStorage("favourites", [])
 
-    const removeFavorite = (id) => {
-        setFavorites(favorites.filter(movie => movie.id !== id))
+    const removeFavourite = (id) => {
+        setFavourites(favourites.filter(movie => movie.id !== id))
     }
 
-    if (favorites.length === 0) 
+    if (favourites.length === 0) 
         return <p>No favourites added</p>
 
     return (
         <div>
-            {favorites.map(movie => (
-                <MovieCard key={movie.id} movie={movie} onRemove={removeFavorite} />
+            {favourites.map(movie => (
+                <MovieCard key={movie.id} movie={movie} onRemove={removeFavourite} />
             ))}
         </div>
     )

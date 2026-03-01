@@ -6,16 +6,16 @@ import { movies } from "../../data/movies"
 export default function MovieDetail() {
     const { id } = useParams()
     const navigate = useNavigate()
-    const [favorites, setFavorites] = useLocalStorage("favourites", [])
+    const [favourites, setFavorites] = useLocalStorage("favourites", [])
 
     const movie = movies.find(m => m.id === parseInt(id))
-    const isFavorite = favorites.some(f => f.id === movie.id)
+    const isFavorite = favourites.some(f => f.id === movie.id)
 
     const toggleFavorite = () => {
         if (isFavorite) {
-            setFavorites(favorites.filter(f => f.id !== movie.id))
+            setFavorites(favourites.filter(f => f.id !== movie.id))
         } else {
-            setFavorites([...favorites, movie])
+            setFavorites([...favourites, movie])
         }
     }
 

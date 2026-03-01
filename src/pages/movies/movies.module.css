@@ -1,0 +1,51 @@
+img{
+    max-width: 200px;
+    border-radius: 10px;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 2rem;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.header span{
+    font-family: "Pacifico", cursive;
+    font-weight: 100;
+    font-size: 25px;
+}
+
+.main {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.searches{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.searches input, .searches select{
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    padding: 5px;
+}
+
+.movies{
+    display: grid;
+}
