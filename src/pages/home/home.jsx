@@ -1,10 +1,32 @@
-import { Link } from "react-router-dom"
-import { useNavigate } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
+import { useState, useEffect, useRef } from "react"
+import { movies } from "../../data/movies"
 import styles from './home.module.css'
 
 export default function home() {
     const navigate = useNavigate()
+    const ribbonRef = useRef(null)
 
+    useEffect(() => {
+        const ribbon = ribbonRef.current
+        let animationId
+        let position = 0
+    
+        const scroll = () => {
+            if (ribbon) {
+                position += 0.35 
+                ribbon.scrollLeft = position
+                if (position >= ribbon.scrollWidth / 2) {
+                    position = 0
+                }
+            }
+            animationId = requestAnimationFrame(scroll)
+        }
+    
+        animationId = requestAnimationFrame(scroll)
+        return () => cancelAnimationFrame(animationId)
+    }, [])
+    
     return (
         <div className={styles.container}>
             <header className={styles.header}>
@@ -22,8 +44,19 @@ export default function home() {
                         if (e.key === "Enter") navigate(`/movies?search=${e.target.value}`)
                     }}
                 />
-                {/* <div></div> dodat loop random filomva */}
             </main>
+            <div className={styles.ribbon} ref={ribbonRef}>
+                <div className={styles.ribbonTrack}>
+                    {[...movies, ...movies].map((movie, index) => (
+                        <img
+                            key={index}
+                            src={movie.poster}
+                            alt={movie.title}
+                            className={styles.ribbonPoster}
+                        />
+                    ))}
+                </div>
+            </div>
         </div>
     )
 }

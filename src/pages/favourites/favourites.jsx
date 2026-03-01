@@ -1,9 +1,11 @@
 import styles from './favourites.module.css'
 import { useLocalStorage } from "../../hooks/useLocalStorage"
 import MovieCard from "../../components/MovieCard/MovieCard"
+import { useNavigate } from "react-router-dom"
 
 export default function Favourites() {
     const [favourites, setFavourites] = useLocalStorage("favourites", [])
+    const navigate = useNavigate()
 
     const removeFavourite = (id) => {
         setFavourites(favourites.filter(movie => movie.id !== id))
@@ -15,7 +17,8 @@ export default function Favourites() {
         return (
             <div className={styles.container}>
                 <header className={styles.header}>
-                    <span>Favourites <img className={styles.star} src="/src/assets/star.png" /></span>
+                    <span>Favourites <img className={styles.star} src="/src/assets/icons/star.png" /></span>
+                    <button className={styles.backButton} onClick={() => navigate(-1)}><img src='/src/assets/icons/left-arrow.svg'/></button>
                 </header>
                 <main className={styles.main}>
                     <div className={styles.favourites}>

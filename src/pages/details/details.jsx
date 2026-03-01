@@ -3,6 +3,7 @@ import { useParams, useNavigate } from "react-router-dom"
 import { useLocalStorage } from "../../hooks/useLocalStorage"
 import { movies } from "../../data/movies"
 import { useDominantColor } from "../../hooks/useDominantColor"
+import { Link } from "react-router-dom"
 
 export default function MovieDetail() {
     const { id } = useParams()
@@ -32,7 +33,9 @@ export default function MovieDetail() {
         }}
     >
             <header className={styles.header}>
-                <span>Movie Explorer</span>
+                <Link to="/" className={styles.logoLink}>
+                    <span>Movie Explorer <img src="/src/assets/icons/film-roll.png"/></span>
+                </Link>
             </header>
             <main className={styles.main}>
                 <button className={styles.backButton} onClick={() => navigate(-1)}>← Back</button>

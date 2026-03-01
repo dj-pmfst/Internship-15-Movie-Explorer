@@ -57,7 +57,9 @@ export default function Movies() {
     return (
         <div className={styles.container}>
             <header className={styles.header}>
-                <span>Movie Explorer <img src="/src/assets/film-roll.png"/></span>
+            <Link to="/" className={styles.logoLink}>
+                <span>Movie Explorer <img src="/src/assets/icons/film-roll.png"/></span>
+            </Link>
                 <Link to="/favourites">Favourites</Link>
             </header>
 

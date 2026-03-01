@@ -49,9 +49,14 @@ img{
 
 .searches input, .searches select{
     border-radius: 8px;
-    border: 1px solid #ccc;
+    border: 1px solid rgb(44, 43, 43);
+    background-color: rgba(199, 220, 239, 0.66);
     font-size: 16px;
     padding: 5px;
+}
+
+.searches input::placeholder{
+    color: rgba(0, 0, 0, 0.57);
 }
 
 .movies {
