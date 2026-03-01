@@ -4,6 +4,7 @@ import { useFetchMovies } from "../../hooks/useFetchMovies"
 import MovieCard from "../../components/MovieCard/MovieCard"
 import styles from './movies.module.css'
 import { useSearchParams } from "react-router-dom"
+import Loading from "../../components/Loading/loader"
 
 export default function Movies() {
     const navigate = useNavigate()
@@ -51,7 +52,7 @@ export default function Movies() {
         return result
     }, [data, search, genre, sortBy])
 
-    if (loading) return <p>Loading movies...</p>
+    if (loading) return <Loading />
     if (error) return <p>{error}</p>
 
     return (

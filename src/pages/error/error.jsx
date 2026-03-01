@@ -1,10 +1,17 @@
 import styles from './error.module.css'
+import { Link } from "react-router-dom"
 
 export default function NotFound(){
-    return(
+    return (
         <div className={styles.container}>
-            <h1>404</h1>
-            <p>Not Found</p>
+            <main className={styles.main}>
+                <img className={styles.icon} src="/src/assets/icons/404.png"/>
+                <div className={styles.code}>404</div>
+                
+                <p className={styles.message}>Not found</p>
+                
+                <Link to="/" className={styles.homeButton}>Back to Home page</Link>
+            </main>
         </div>
     )
 }
